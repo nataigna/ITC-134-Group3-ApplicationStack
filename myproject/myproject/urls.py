@@ -16,10 +16,10 @@ Including another URLconf
 from django.conf.urls import url # not in the book
 from django.contrib import admin
 
-from django.urls import path, include # new
+from django.urls import url, include # new
 
 urlpatterns = [
-    path(r'^admin/', admin.site.urls),
+    url(r'^admin/', admin.site.urls),
     # path('admin/', admin.site.urls), # from the book
-    path(r'^myapp/', include('myapp.urls')), # new
+    url(r'^myapp/', include('myapp.urls')), # new
 ]
