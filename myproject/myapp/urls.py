@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import url
 
 from .views import homePageView
 
