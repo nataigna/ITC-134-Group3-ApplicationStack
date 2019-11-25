@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url # not in the book
 from django.contrib import admin
 
-from django.urls import path, include # new
+from django.urls import url, include # new
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
