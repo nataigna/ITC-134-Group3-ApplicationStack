@@ -21,5 +21,5 @@ from django.urls import url, include # new
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     # path('admin/', admin.site.urls), # from the book
-    url('', include('myapp.urls')), # new
+    url(r'^myapp/', include('myapp.urls')), # new
 ]
