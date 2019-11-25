@@ -18,6 +18,6 @@ from django.urls import path
 from myapp import views
 
 urlpatterns = [
-    path(r'^admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('', views.index, name="homepage")
 ]
